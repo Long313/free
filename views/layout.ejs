@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Laralink" />
+    <!-- Favicon Icon -->
+    <link rel="icon" href="assets/img/favicon.png" />
+    <!-- Site Title -->
+    <title>NFT Minting or Collection Landing Page HTML Template</title>
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/slick.css" />
+    <link rel="stylesheet" href="assets/css/plugins/animate.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/firework.css" />
+    <script src="./scripts/web3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="process.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>var socket = io("http://localhost"); </script>
+    <script src = "scripts/web3.js"></script>
+  </head>
+
+  <body class="cs-dark">
+    <div class="cs-preloader cs-white_bg cs-center">
+      <div class="cs-preloader_in">
+        <img src="assets/img/logo_mini.svg" alt="Logo" />
+      </div>
+    </div>
+    <!-- Start Header Section -->
+    <%- include('modal/header.ejs') %>
+    <!-- End Header Section -->
+   
+
+    <!-- Start Hero -->
+    <%- include('modal/bigimage.ejs') %>
+    <%- include('modal/listnft.ejs') %>
+    <!-- End Hero -->
+
+    <%- include('modal/aboutus.ejs') %>
+
+    <%- include('modal/service.ejs') %>
+    <div class="cs-height_100 cs-height_lg_40"></div>
+    <!-- Start Fun Fact -->
+    <!--<%- include('modal/funfact.ejs') %> 
+    <!-- End Fun Fact -->
+    
+    <!-- Start Tending Item -->
+
+    <!-- End Tending Item -->
+
+
+
+    <!-- Start Mint Modal -->
+    <%- include('modal/mint.ejs') %>
+    <!-- End Mint Modal -->
+
+    <!-- Start roadmap Modal -->
+    <%- include('modal/roadmap.ejs') %>
+
+    <!-- End roadmap Modal -->
+    <%- include('modal/joinus.ejs') %>
+
+    <!-- Start Footer -->
+    <%- include('modal/footer.ejs') %>
+
+    <!-- End Footer -->
+
+    <!-- Script -->
+    <script src="assets/js/plugins/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/plugins/jquery.slick.min.js"></script>
+    <script src="assets/js/plugins/jquery.counter.min.js"></script>
+    <script src="assets/js/plugins/wow.min.js"></script>
+    <script src="assets/js/plugins/ripples.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
