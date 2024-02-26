@@ -165,13 +165,13 @@ a {
   transition: all 0.3s ease;
 }
 
-#about {
+/* #about {
   background-image: url("../img/aboutbg.png");
   height: 610px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 #minttut {
   margin-top: 60px;
   background-image: url("../img/minttut.png");
@@ -3971,7 +3971,8 @@ ul.cs-list.cs-style2 li:not(:last-child) {
 #roadmap {
 }
 
-#roadmap .title {
+#roadmap .title,
+#about .title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4070,39 +4071,40 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   height: 173px;
 }
 
-
 #roadmap .egg-1 {
   top: -80px;
-  left: calc(173px / 2);
-  transform: translateX(-12.5%);
-} 
+  left: 12.5%;
+  transform: translateX(-50%);
+}
 
 #roadmap .egg-2 {
   top: -40px;
-  left: calc(173px*2);
-  transform: translateX(-12.5%);
+  left: calc(25%);
+  transform: translateX(50%);
 }
 #roadmap .egg-3 {
   top: 20px;
-  right: calc(173px*2 + 173px/2);
-  transform: translateX(12.5%);
+  right: 25%;
+  transform: translateX(-50%);
 }
 
 #roadmap .egg-4 {
   top: -40px;
-  right: calc(173px/2);
-  /* transform: translateX(12.5%); */
+  right: 12.5%;
+  transform: translateX(50%);
 }
 
 #roadmap .phases .phase-2 {
   position: absolute;
-  left: calc(173px*2 - 173px/2);
+  left: calc(25%);
+  transform: translateX(-12.5%);
   bottom: -200px;
 }
 
 #roadmap .phases .phase-3 {
   position: absolute;
-  right: calc(173px*2);
+  right: 25%;
+  transform: translateX(12.5%);
   top: 100px;
 }
 
@@ -4111,4 +4113,16 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   right: 10px;
   bottom: -200px;
 }
+/* Mobile */
+@media screen and (max-width: 575px) {
+  .cs-main_header .cs-main_header_left {
+    width: 72px;
+    height: 72px;
+  }
+  .cs-main_header .cs-main_header_left img {
+    height: 100%;
+    width: 100%;
+  }
+}
+/* Mobile */
 /* end css long*/
