@@ -3978,21 +3978,24 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   align-items: center;
 }
 
-#roadmap .title .feature {
+#roadmap .title .feature,
+#about .title .feature {
   color: #fab2f1;
   font-size: 18px;
   font-weight: 500;
 }
 
-#roadmap .title .section-name {
+#roadmap .title .section-name,
+#about .title .section-name {
   color: #fff;
   font-weight: 600;
   font-size: 36px;
+  margin-bottom: 20px;
 }
 
 #roadmap .phases {
   position: relative;
-  margin: 40px 40px 200px;
+  margin: 0px 40px 200px;
 }
 
 #roadmap .phase {
@@ -4112,6 +4115,29 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   position: absolute;
   right: 10px;
   bottom: -200px;
+}
+
+#about .container-content {
+  display: flex;
+  flex-direction: row;
+  max-width: 70%;
+  margin: auto;
+}
+
+#about .container-content .about-item {
+  background-color: #1a1a1a;
+  width: 33.3333%;
+  border-radius: 10px;
+  margin-right: 30px;
+  padding: 20px;
+}
+
+#about .about-item .title {
+  margin: 10px 0;
+  font-weight: 600;
+  line-height: 1.2em;
+  font-size: 24px;
+  color: #fff;
 }
 /* Mobile */
 @media screen and (max-width: 575px) {
