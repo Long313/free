@@ -1439,6 +1439,9 @@ txt {
 
 .cs-mint_secton {
   padding: 50px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  opacity: 0.9;
 }
 
 ul.cs-list.cs-style2 li {
@@ -4089,6 +4092,7 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   }
 
   #roadmap {
+    margin-bottom: 20px;
   }
 
   #roadmap .phases {
@@ -4154,6 +4158,28 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   #roadmap .phases.mobile {
     display: none;
   }
+
+  .cs-slider_wrapper .cs-slide .cs-image_box_img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .cs-slider_wrapper .cs-image_box_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .cs-modal .cs-close_modal {
+    cursor: pointer;
+    z-index: 9;
+  }
+
+  .cs-modal .cs-close_modal:hover {
+    cursor: pointer;
+    z-index: 9;
+    background-color: transparent;;
+  } 
 }
 /* Mobile */
 @media screen and (max-width: 575px) {
@@ -4214,11 +4240,40 @@ ul.cs-list.cs-style2 li:not(:last-child) {
     display: flex;
     flex-direction: row;
     margin-top: 40px;
+    align-items: center;
   }
 
   #roadmap .phases .row-phase .phase {
     background: linear-gradient(0, #000, #fff);
     min-height: 150px;
+  }
+
+  .cs-slider_wrapper .cs-slide .cs-image_box_img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cs-slider_wrapper .cs-image_box_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  } 
+
+  /* .slick-slide {
+    width: 200px;
+
+  }
+  .cs-slide {
+    width: 200px;
+  }
+  .cs-image_box_in.cs-white_bg {
+    width: 200px;
+  } */
+  .cs-image_box_in.cs-white_bg {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10px;
   }
 }
 /* Mobile */
