@@ -998,7 +998,6 @@ txt {
   opacity: 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  min-width: 200px;
 }
 
 .cs-btn_filed:hover::after {
@@ -3771,16 +3770,6 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   transform: translateY(0px);
 }
 
-.cs-image_box.cs-style2 {
-  display: block;
-  margin-right: 50px;
-}
-
-.cs-image_box.cs-style2 img {
-  max-width: 200%;
-  max-height: auto;
-}
-
 .cs-image_box.cs-style2 .cs-image_box_in {
   border-radius: inherit;
   padding: 10px;
@@ -3873,8 +3862,13 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   background-color: #7c9b7c;
   opacity: 0.9;
   font-weight: 800;
-  min-width: 200px;
-  height: 60px;
+  min-width: 300px;
+  height: 80px;
+}
+
+.cs-dark .cs-primary_btn span {
+  font-weight: 900;
+  font-size: 30px;
 }
 
 .cs-dark .cs-primary_btn:hover {
@@ -4008,8 +4002,11 @@ ul.cs-list.cs-style2 li:not(:last-child) {
 
 #minttut .description {
   padding: 0 10px;
+  text-align: justify;
 }
-
+#about {
+  margin-top: 40px;
+}
 #about img {
   display: inline-block;
   border-radius: 10px;
@@ -4025,6 +4022,10 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#about .cs-btn_group2 {
+  margin-top: 100px;
 }
 
 #roadmap .title .feature {
@@ -4182,11 +4183,15 @@ ul.cs-list.cs-style2 li:not(:last-child) {
 }
 
 /* common */
+@media screen and (min-width: 575px) and (max-width: 1024px){
+  
+}
 
 @media screen and (min-width: 1024px) {
   #roadmap .phase {
     height: 228px;
     width: 25%;
+    max-width: 300px;
   }
 
   #roadmap .egg {
@@ -4246,6 +4251,8 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   }
 
   #roadmap .content .description {
+    text-align: left;
+    padding: 10px;
   }
 
   #roadmap .image {
@@ -4317,15 +4324,24 @@ ul.cs-list.cs-style2 li:not(:last-child) {
     display: none;
   }
 
+  .cs-slider_wrapper {
+    height: 200px;
+    overflow: hidden;
+  }
+  .cs-slider_wrapper .slick-slide {
+    width: 500px !important;
+  }
   .cs-slider_wrapper .cs-slide .cs-image_box_img {
-    width: 160px;
-    height: 160px;
+    width: 300px;
+    height: 200px;
+    margin: 0 20px;
+    display: inline-block;
   }
 
   .cs-slider_wrapper .cs-image_box_img img {
+    display: block;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
   }
 
   .cs-modal .cs-close_modal {
@@ -4342,9 +4358,17 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   .cs-main_header #Update_Wallet {
     font-weight: 700;
   }
+
+  
+  #minttut .container-content .about-item img {
+    width: 100% !important;
+  }
 }
 /* Mobile */
 @media screen and (max-width: 575px) {
+  .cs-hero.cs-style1 {
+    min-height: 700px;
+  }
   .cs-main_header .cs-main_header_left {
     width: 60px;
     height: 60px;
@@ -4353,8 +4377,11 @@ ul.cs-list.cs-style2 li:not(:last-child) {
     height: 60px;
   }
   .cs-main_header .cs-main_header_left img {
-    height: 100%;
-    width: 100%;
+    position: fixed;
+    top: -50px;
+    left: -10px;
+    width: 160px;
+    height: 160px;
   }
 
   #minttut .container-content {
@@ -4386,7 +4413,6 @@ ul.cs-list.cs-style2 li:not(:last-child) {
 
   #roadmap .phases.mobile .phase {
     height: fit-content;
-    margin-bottom: 60px;
   }
   #roadmap .phase {
     height: fit-content;
@@ -4410,12 +4436,16 @@ ul.cs-list.cs-style2 li:not(:last-child) {
 
   #roadmap .phases .row-phase .phase {
     background: linear-gradient(0, #000, #fff);
-    min-height: 150px;
+    min-height: 180px;
+  }
+
+  #roadmap {
+    /* margin-top: 50px; */
   }
 
   .cs-slider_wrapper .cs-slide .cs-image_box_img {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 200px;
   }
 
   .cs-slider_wrapper .cs-image_box_img img {
@@ -4428,7 +4458,6 @@ ul.cs-list.cs-style2 li:not(:last-child) {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 10px;
   }
 
   .cs-modal .cs-close_modal {
@@ -4473,6 +4502,7 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   .container-footer .upper-left .up span,
   .container-footer .upper-left .low span {
     width: 50%;
+    padding-left: 40px;
   }
 
   .container-footer .upper-left .low {
