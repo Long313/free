@@ -998,6 +998,7 @@ txt {
   opacity: 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  min-width: 200px;
 }
 
 .cs-btn_filed:hover::after {
@@ -3872,7 +3873,8 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   background-color: #7c9b7c;
   opacity: 0.9;
   font-weight: 800;
-  min-width: 160px;
+  min-width: 200px;
+  height: 60px;
 }
 
 .cs-dark .cs-primary_btn:hover {
@@ -4034,8 +4036,8 @@ ul.cs-list.cs-style2 li:not(:last-child) {
 #roadmap .title .section-name {
   color: #fff;
   font-weight: 800;
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 40px;
+  margin: 20px 0;
 }
 
 #roadmap .phase-1 .phase-number {
@@ -4105,13 +4107,12 @@ ul.cs-list.cs-style2 li:not(:last-child) {
 #container_join_us .container_content a:hover {
   color: #fff;
   opacity: 1;
-
 }
 
 .container-footer {
- width: 80%;
- margin: auto; 
- padding: 40px 0;
+  width: 80%;
+  margin: auto;
+  padding: 40px 0;
 }
 
 .container-footer .upper {
@@ -4119,7 +4120,7 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 20px;
-  border-bottom: 1px solid #22336D;
+  border-bottom: 1px solid #22336d;
 }
 
 .container-footer .upper .upper-left {
@@ -4136,7 +4137,6 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   font-size: 14px;
   color: #fff;
 }
-
 
 .container-footer .upper-left .low span {
   width: 33.3333%;
@@ -4175,7 +4175,10 @@ ul.cs-list.cs-style2 li:not(:last-child) {
 
 .container-footer .bellow-right p {
   font-size: 12px;
-  color: #8C93B2;
+  color: #8c93b2;
+}
+#about .content {
+  line-height: 40px;
 }
 
 /* common */
@@ -4266,10 +4269,9 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   }
   #roadmap .phases .phase-1 {
     position: relative;
-
   }
 
-  #roadmap .phases .phase-1 img{
+  #roadmap .phases .phase-1 img {
     position: absolute;
     top: 80%;
     left: 50%;
@@ -4286,7 +4288,6 @@ ul.cs-list.cs-style2 li:not(:last-child) {
     top: -160px;
     left: 0%;
   }
-  
 
   #roadmap .phases .phase-3 {
     position: absolute;
@@ -4341,14 +4342,15 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   .cs-main_header #Update_Wallet {
     font-weight: 700;
   }
-
-
 }
 /* Mobile */
 @media screen and (max-width: 575px) {
   .cs-main_header .cs-main_header_left {
-    width: 72px;
-    height: 72px;
+    width: 60px;
+    height: 60px;
+  }
+  .cs-site_header.cs-style1 .cs-main_header_in {
+    height: 60px;
   }
   .cs-main_header .cs-main_header_left img {
     height: 100%;
@@ -4446,8 +4448,6 @@ ul.cs-list.cs-style2 li:not(:last-child) {
     text-align: center;
   }
 
-
-
   .container-footer {
     width: 100%;
   }
@@ -4469,7 +4469,7 @@ ul.cs-list.cs-style2 li:not(:last-child) {
     display: flex;
     flex-wrap: wrap;
   }
- 
+
   .container-footer .upper-left .up span,
   .container-footer .upper-left .low span {
     width: 50%;
@@ -4500,6 +4500,14 @@ ul.cs-list.cs-style2 li:not(:last-child) {
 
   .container-footer {
     padding: 40px 0 0;
+  }
+
+  .container .check-icon {
+    display: none;
+  }
+
+  .cs-hero .cs-hero_img img {
+    display: none;
   }
 }
 /* Mobile */
