@@ -162,29 +162,45 @@ a {
   transition: all 0.3s ease;
 }
 
-/* #about {
-  background-image: url("../img/aboutbg.png");
-  height: 610px;
+#about {
+  background-image: url("../img/about_background.png");
+  background-size: 100% 100%; /* Cài đặt kích thước background-image, chiều rộng là 100% và chiều cao tự động điều chỉnh */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#about .content {
+  text-align: justify;
+}
+#minttut {
+  margin-top: 60px;
+  background-image: url("../img/minttut.png");
+  height: 1000px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-} */
-#minttut {
-  margin-top: 60px;
+}
+#roadmap{
   background-image: url("../img/minttut.png");
   height: max-content;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-/* #roadmap{
-  margin-top: 60px;
-  height: 1006px;
-  background-repeat: no-repeat;
-  background-position: center;
+/* #roadmap {
+  height: 50%;
+  background-image: url('../img/image_common.png'); 
   background-size: cover;
-  background-image: url("../img/roadmap.png");
+  background-position: center;
 } */
+
+#minttut {
+  background-position: top;
+}
+
+#roadmap {
+  background-position: bottom;
+}
 button {
   color: inherit;
   -webkit-transition: all 0.3s ease;
@@ -2177,10 +2193,12 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   transition: all 0.3s ease;
 }
 
-.slick-dotted {
+/* .slick-dotted {
   cursor: url(../img/drag.png) 16 9, ew-resize !important;
+} */
+.cs-image_box {
+  cursor: pointer;
 }
-
 .cs-gap-24 .slick-slide {
   padding-left: 12px;
   padding-right: 12px;
@@ -4037,7 +4055,7 @@ ul.cs-list.cs-style2 li:not(:last-child) {
 #roadmap .title .section-name {
   color: #fff;
   font-weight: 800;
-  font-size: 40px;
+  font-size: 44px;
   margin: 20px 0;
 }
 
@@ -4329,7 +4347,8 @@ ul.cs-list.cs-style2 li:not(:last-child) {
     overflow: hidden;
   }
   .cs-slider_wrapper .slick-slide {
-    width: 500px !important;
+    width: 350px !important;
+    transition: transform 2s ease;
   }
   .cs-slider_wrapper .cs-slide .cs-image_box_img {
     width: 300px;
