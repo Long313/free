@@ -2285,6 +2285,7 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   }
   .cs-pagination.cs-style1 {
     margin-top: 30px;
+    display: none;
   }
   .cs-pagination.cs-style1 li.slick-active {
     width: 30px;
@@ -2337,6 +2338,28 @@ ul.cs-list.cs-style2 li:not(:last-child) {
 }
 
 @media screen and (max-width: 575px) {
+  #minttut {
+    margin-top: 100px;
+    padding-bottom: 100px;
+  } 
+  .cs-slider {
+  padding-bottom: 100px;
+  }
+
+  #roadmap {
+    padding-bottom: 100px;
+  }
+  #roadmap .title {
+    padding-top: 50px;
+   }
+
+  #about .cs-btn_group2 {
+    position: relative;
+    top: 160px;
+  }
+  #about {
+    padding-bottom: 100px;
+  }
   .cs-slider_arrows.cs-style1 .slick-arrow {
     height: 45px;
     width: 45px;
