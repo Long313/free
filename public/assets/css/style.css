@@ -4093,7 +4093,6 @@ ul.cs-list.cs-style2 li:not(:last-child) {
 #container_join_us {
   width: 100%;
   height: 300px;
-  margin-top: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4205,6 +4204,19 @@ ul.cs-list.cs-style2 li:not(:last-child) {
 }
 
 @media screen and (min-width: 1024px) {
+  #roadmap {
+    padding-top: 50px; 
+    padding-bottom: 150px;
+  }
+  #about .cs-btn_group2 {
+    margin-top: 140px;
+    margin-bottom: 100px;
+    position: relative;
+    top: 70px;
+  }
+  .cs-slider.cs-style1 {
+    padding-bottom: 100px;
+  }
   #roadmap .phase {
     height: 228px;
     width: 25%;
@@ -4380,6 +4392,10 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   
   #minttut .container-content .about-item img {
     width: 100% !important;
+  }
+
+  #minttut {
+    padding-bottom: 200px;
   }
 }
 /* Mobile */
