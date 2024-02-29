@@ -4080,7 +4080,7 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   background-color: #000;
   width: 98%;
   height: 96%;
-  left: 3px;
+  left: 2px;
   top: 4px;
   border-radius: 18px;
 }
@@ -4450,11 +4450,12 @@ ul.cs-list.cs-style2 li:not(:last-child) {
     flex-direction: row;
     margin-top: 40px;
     align-items: center;
+    margin-left: 15px;
   }
 
   #roadmap .phases .row-phase .phase {
     background: linear-gradient(0, #000, #fff);
-    min-height: 180px;
+    min-height: 200px;
   }
 
   #roadmap {
@@ -4557,6 +4558,19 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   .cs-hero .cs-hero_img img {
     display: none;
   }
+}
+
+@media screen and (max-width: 371px) {
+  #roadmap .phases .row-phase .phase {
+    background: linear-gradient(0, #000, #fff);
+    min-height: 250px;
+    margin: 0 5px;
+  }
+
+  #roadmap .phases .row-phase {
+    margin-left: 2px;
+  }
+
 }
 /* Mobile */
 /* end css long*/
