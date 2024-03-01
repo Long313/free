@@ -4459,6 +4459,31 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   #minttut {
     padding-bottom: 200px;
   }
+  .cs-slider {
+    height: 340px;
+  }
+  .cs-hero {
+    height: calc(1090px - 340px);
+  }
+  #about {
+    height: 1043px;
+  }
+
+  #roadmap {
+    height: 1006px;
+  }
+
+  #minttut {
+    height: calc(2161px - 1006px);
+  }
+
+  #container_join_us {
+    height: 300px;
+  }
+
+  .container-footer {
+    height: 239px;
+  }
 }
 /* Mobile */
 @media screen and (max-width: 575px) {
