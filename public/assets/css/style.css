@@ -167,6 +167,8 @@ a {
   background-size: 100% 100%; /* Cài đặt kích thước background-image, chiều rộng là 100% và chiều cao tự động điều chỉnh */
   background-repeat: no-repeat;
   background-position: center;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 #about .content {
@@ -178,8 +180,10 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  max-width: 1400px;
+  margin: 0 auto;
 }
-#roadmap{
+#roadmap {
   background-image: url("../img/minttut.png");
   height: max-content;
   background-size: cover;
@@ -1990,6 +1994,8 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .cs-slide {
   position: relative;
@@ -2350,9 +2356,9 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   #minttut {
     margin-top: 100px;
     padding-bottom: 100px;
-  } 
+  }
   .cs-slider {
-  padding-bottom: 100px;
+    padding-bottom: 100px;
   }
 
   #roadmap {
@@ -2360,7 +2366,7 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   }
   #roadmap .title {
     padding-top: 50px;
-   }
+  }
 
   #about .cs-btn_group2 {
     position: relative;
@@ -2619,6 +2625,8 @@ ul.cs-list.cs-style2 li:not(:last-child) {
 .cs-site_header {
   position: relative;
   z-index: 101;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .cs-site_header .cs-btn.cs-style6 {
@@ -2813,8 +2821,8 @@ ul.cs-list.cs-style2 li:not(:last-child) {
 .cs-site_header.cs-sticky-header {
   position: fixed;
   z-index: 200;
-  width: 100%;
   top: 0;
+  right: 0;
   left: 0;
 }
 
@@ -3334,6 +3342,8 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .cs-hero.cs-style1 .cs-hero_img {
@@ -4063,6 +4073,7 @@ ul.cs-list.cs-style2 li:not(:last-child) {
 #about img {
   display: inline-block;
   border-radius: 10px;
+  aspect-ratio: 636/388;
 }
 
 #about .cs-seciton_heading h2 {
@@ -4132,6 +4143,10 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 #container_join_us .container_content {
@@ -4166,6 +4181,8 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   width: 80%;
   margin: auto;
   padding: 40px 0;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .container-footer .upper {
@@ -4235,14 +4252,21 @@ ul.cs-list.cs-style2 li:not(:last-child) {
 }
 
 /* common */
-@media screen and (min-width: 575px) and (max-width: 1024px){
-  
+@media screen and (min-width: 1400px) {
+  .container-footer .upper {
+    padding: 40px;
+  }
+  .container-footer .bellow {
+    padding: 40px 40px 0;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   #roadmap {
-    padding-top: 50px; 
+    padding-top: 50px;
     padding-bottom: 150px;
+    max-width: 1400px;
+    margin: 0 auto;
   }
   #about .cs-btn_group2 {
     margin-top: 140px;
@@ -4347,6 +4371,7 @@ ul.cs-list.cs-style2 li:not(:last-child) {
     position: absolute;
     top: 86%;
     left: 50%;
+    aspect-ratio: 153/173;
   }
 
   #roadmap .phases .phase-2 {
@@ -4408,6 +4433,7 @@ ul.cs-list.cs-style2 li:not(:last-child) {
     display: block;
     width: 100%;
     height: 100%;
+    aspect-ratio: 300/200;
   }
 
   .cs-modal .cs-close_modal {
@@ -4425,9 +4451,9 @@ ul.cs-list.cs-style2 li:not(:last-child) {
     font-weight: 700;
   }
 
-  
   #minttut .container-content .about-item img {
     width: 100% !important;
+    aspect-ratio: 324/178;
   }
 
   #minttut {
@@ -4440,7 +4466,7 @@ ul.cs-list.cs-style2 li:not(:last-child) {
     position: absolute;
     right: 42px;
     bottom: 126px;
-  } 
+  }
   .slick-slide {
     height: 200px;
   }
@@ -4451,6 +4477,17 @@ ul.cs-list.cs-style2 li:not(:last-child) {
     width: 60px;
     height: 60px;
   }
+
+  .cs-site_header {
+    position: relative;
+  }
+  .cs-main_header_in .cs-main_header_left img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+  }
+
   .cs-site_header.cs-style1 .cs-main_header_in {
     height: 60px;
   }
@@ -4460,6 +4497,9 @@ ul.cs-list.cs-style2 li:not(:last-child) {
     left: -10px;
     width: 160px;
     height: 160px;
+  }
+  .cs-hero .container img {
+    aspect-ratio: 634/510;
   }
 
   #minttut .container-content {
@@ -4606,6 +4646,8 @@ ul.cs-list.cs-style2 li:not(:last-child) {
 
   #container_join_us {
     margin-top: 50px;
+    max-width: 1400px !important;
+    margin: 0 auto;
   }
 
   .container-footer {
@@ -4631,7 +4673,6 @@ ul.cs-list.cs-style2 li:not(:last-child) {
   #roadmap .phases .row-phase {
     margin-left: 2px;
   }
-
 }
 /* Mobile */
 /* end css long*/
